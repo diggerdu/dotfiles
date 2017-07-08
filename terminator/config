@@ -1,0 +1,32 @@
+[global_config]
+  borderless = True
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  homogeneous_tabbar = False
+  scroll_tabbar = True
+  title_font = Monaco 9
+  title_hide_sizetext = True
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    audible_bell = True
+    background_color = "#002b36"
+    background_image = None
+    custom_command = tmux
+    font = Monaco 11
+    foreground_color = "#839496"
+    icon_bell = False
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_custom_command = True
+    use_system_font = False
