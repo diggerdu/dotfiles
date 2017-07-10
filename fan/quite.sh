@@ -7,10 +7,7 @@ su -c "echo 80 > /sys/class/hwmon/hwmon1/pwm3"
 su -c "echo 1 > /sys/class/hwmon/hwmon1/pwm4_enable"
 su -c "echo 100 > /sys/class/hwmon/hwmon1/pwm4"
 
-nvidia-settings -a "[gpu:0]/GPUFanControlState=1"
-nvidia-settings -a "[gpu:1]/GPUFanControlState=1"
-nvidia-settings -a "[gpu:2]/GPUFanControlState=1"
-nvidia-settings -a "[fan:0]/GPUTargetFanSpeed=100"
-nvidia-settings -a "[fan:1]/GPUTargetFanSpeed=100"
-nvidia-settings -a "[fan:2]/GPUTargetFanSpeed=60"
+nvidia-settings -a "[gpu:0]/GPUFanControlState=0"
+nvidia-settings -a "[gpu:1]/GPUFanControlState=0"
+nvidia-settings -a "[gpu:2]/GPUFanControlState=0"
 

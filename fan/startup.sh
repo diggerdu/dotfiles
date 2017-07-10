@@ -10,3 +10,5 @@ echo 255 > /sys/class/hwmon/hwmon1/pwm2
 echo 1 > /sys/class/hwmon/hwmon1/pwm3
 echo 1 > /sys/class/hwmon/hwmon1/pwm4
 
+# rotate tty
+echo 3 | tee /sys/class/graphics/fbcon/rotate_all
